@@ -1,0 +1,97 @@
+:root {
+    --very-color-principal: #180161;
+    --secundary-color: #4F1787;
+    --color-border-solid: #26355D;
+    --text-color-white: #FAF7F0;
+    --body-color-black: #0F0F0F;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Ajuste en la fuente */
+    height: 100vh; /* Ajustar altura al 100% de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-color-black);
+    overflow: hidden;
+    position: relative; /* Necesario para posicionar el fondo de partículas */
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    display: flex;
+    place-items: center;
+    width: 600px;
+    height: 700px;
+    align-items: center;
+    background-color: var(--very-color-principal);
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 4px 0px 0px var(--text-color-white);
+    padding: 30px;
+    position: relative; /* Asegura que el contenido esté por encima de las partículas */
+    z-index: 2; /* Asegura que el contenido esté por encima del fondo de partículas */
+}
+
+.img__preview {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--color-border-solid);
+    border-radius: 50%;
+    box-shadow:   14px  var(--text-color-white);
+    object-fit: cover;
+}
+
+.img__preview:hover {
+    opacity: 0.16;
+}
+
+.title_content {
+    font-size: 50px;
+    color: var(--text-color-white);
+}
+
+.subtitle_content {
+    font-size: 26px;
+    color: var(--text-color-white);
+}
+
+.container__enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    height: 50px; /* Ajusta la altura según tus necesidades */
+    background-color: var(--body-color-black); /* Color de fondo */
+    color: var(--text-color-white); /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 15px; /* Tamaño del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.7s;
+}
+
+a:hover {
+    opacity: 1.70;
+    color: var(--text-color-white);
+}
+
